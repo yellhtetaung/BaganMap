@@ -1,0 +1,41 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/NotoSansMyanmar-Black.ttf",
+      "sha1": "d6e3f9b0cba6f78c59dea00f5048aec25fb282d3"
+    },
+    {
+      "path": "src/assets/fonts/NotoSansMyanmar-Bold.ttf",
+      "sha1": "ab3b508799f3c7be4a3d29a7b3ad6f5e362ea899"
+    },
+    {
+      "path": "src/assets/fonts/NotoSansMyanmar-ExtraBold.ttf",
+      "sha1": "13b7b29068b81d8914262f6746e2f9e9c5d4f83a"
+    },
+    {
+      "path": "src/assets/fonts/NotoSansMyanmar-ExtraLight.ttf",
+      "sha1": "d6aff07e3e759f7ced960096c5db53c4a476d249"
+    },
+    {
+      "path": "src/assets/fonts/NotoSansMyanmar-Light.ttf",
+      "sha1": "9e15e43491b7f5ca59c5efb139cde86b7dd6c4c2"
+    },
+    {
+      "path": "src/assets/fonts/NotoSansMyanmar-Medium.ttf",
+      "sha1": "1583b943d7261355104eddc896c2a56e6455c2c4"
+    },
+    {
+      "path": "src/assets/fonts/NotoSansMyanmar-Regular.ttf",
+      "sha1": "2121c4c9fc767d672e3b6543e0e35e7e865fad43"
+    },
+    {
+      "path": "src/assets/fonts/NotoSansMyanmar-SemiBold.ttf",
+      "sha1": "9e10f02a97b9ab8b6117da794714570d0a26d96f"
+    },
+    {
+      "path": "src/assets/fonts/NotoSansMyanmar-Thin.ttf",
+      "sha1": "cf3e3ed087ed2d0475a33a0019bc8d333713042e"
+    }
+  ]
+}
