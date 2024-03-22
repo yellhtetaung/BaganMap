@@ -22,7 +22,7 @@ const drawerNavigationOptions: DrawerNavigationOptions = {
 const homeDrawerOptions: DrawerNavigationOptions = {
     headerShown: true,
     headerTitle: 'Bagan Tourism',
-    drawerIcon: props => <Icon name={'home'} {...props} />,
+    drawerIcon: props => <Icon.AntDesign name={'home'} {...props} />,
 };
 
 const DrawerNavigation = () => {

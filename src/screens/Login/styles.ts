@@ -45,16 +45,6 @@ export default StyleSheet.create({
         textAlign: 'center',
     },
 
-    button: {
-        backgroundColor: colors.secondary,
-        borderRadius: 5,
-        elevation: 5,
-
-        padding: 10,
-        paddingHorizontal: 40,
-        marginBottom: 30,
-    },
-
     buttonTitle: {
         color: colors.black,
         fontSize: 18,

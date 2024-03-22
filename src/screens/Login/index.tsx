@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, ImageBackground } from 'react-native';
 
 import styles from './styles';
-import { TouchableOpacity } from 'react-native-gesture-handler';
+import { Button } from 'components';
 
 const imageBg = require('../../assets/background.jpeg');
 
@@ -20,9 +20,11 @@ const Login: React.FC<LoginProps> = ({ navigation }) => {
                 </View>
             </View>
 
-            <TouchableOpacity style={styles.button} activeOpacity={0.8} onPress={() => navigation.replace('Drawer')}>
-                <Text style={styles.buttonTitle}>Go to home</Text>
-            </TouchableOpacity>
+            <Button
+                label={'Go to home'}
+                onPress={() => navigation.navigate('Drawer')}
+                labelStyle={styles.buttonTitle}
+            />
         </ImageBackground>
     );
 };
