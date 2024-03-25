@@ -43,4 +43,8 @@ export default StyleSheet.create({
     buttonLableStyle: {
         color: colors.white,
     },
+
+    labelStyle: {
+        marginVertical: 10,
+    },
 });

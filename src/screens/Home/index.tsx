@@ -1,12 +1,10 @@
-import React from 'react';
-import { View, TouchableOpacity } from 'react-native';
-import MapView, { PROVIDER_GOOGLE, Marker } from 'react-native-maps';
+import React, { useEffect, useRef } from 'react';
+import { View, TouchableOpacity, Image, Text } from 'react-native';
+import MapView, { Marker, PROVIDER_GOOGLE } from 'react-native-maps';
 
 import styles from './styles';
 import { colors, Icon } from 'components';
-
 import { useDataContext } from 'context';
-import { FoundResult } from 'context/types';
 
 interface HomeProps {
     route: any;
@@ -15,7 +13,18 @@ interface HomeProps {
 
 const Home: React.FC<HomeProps> = ({ navigation }) => {
     const { foundResult } = useDataContext();
-    const { start, end } = foundResult as FoundResult;
+    const mapRef = useRef<MapView>(null);
+
+    useEffect(() => {
+        if (foundResult) {
+            mapRef.current?.animateToRegion({
+                latitude: foundResult.Latitude,
+                longitude: foundResult.Longitude,
+                latitudeDelta: 0.0922,
+                longitudeDelta: 0.0421,
+            });
+        }
+    }, [foundResult]);
 
     return (
         <View style={styles.container}>
@@ -26,28 +35,31 @@ const Home: React.FC<HomeProps> = ({ navigation }) => {
             </View>
 
             <MapView
+                ref={mapRef}
                 provider={PROVIDER_GOOGLE}
                 style={styles.mapView}
                 initialRegion={{
                     latitude: 21.1717,
                     longitude: 94.8585,
-                    latitudeDelta: start && end ? 0.04 : 10,
-                    longitudeDelta: start && end ? 0.05 : 10,
+                    latitudeDelta: 0.0922,
+                    longitudeDelta: 0.0421,
                 }}
+                onRegionChangeComplete={region => console.log(region)}
                 showsTraffic={true}
                 moveOnMarkerPress={true}
             >
-                {start && (
+                {foundResult && (
                     <Marker
-                        title={start.PagodaMmName}
-                        coordinate={{ latitude: start.Latitude, longitude: start.Longitude }}
-                    />
-                )}
-                {end && (
-                    <Marker
-                        title={end.PagodaMmName}
-                        coordinate={{ latitude: end.Latitude, longitude: end.Longitude }}
-                    />
+                        coordinate={{ latitude: foundResult.Latitude, longitude: foundResult.Longitude }}
+                        tracksViewChanges={true}
+                        tracksInfoWindowChanges={true}
+                        onPress={() => navigation.navigate('Details', { id: foundResult.Id })}
+                    >
+                        <View style={styles.markerContainer}>
+                            <Text style={styles.markerTitle}>{foundResult.PagodaMmName}</Text>
+                            <Image source={require('../../assets/pagoda.png')} style={styles.markerImage} />
+                        </View>
+                    </Marker>
                 )}
             </MapView>
         </View>

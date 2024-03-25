@@ -5,6 +5,7 @@ import { colors } from 'components';
 // import screens
 import Login from 'screens/Login';
 import DrawerNavigation from './DrawerNavigation';
+import Details from 'screens/Details';
 import Search from 'screens/Search';
 
 const Stack = createStackNavigator();
@@ -25,10 +26,8 @@ const loginStackScreenOptions: StackNavigationOptions = {
     headerShown: false,
 };
 
-const searchStackScreenOptions: StackNavigationOptions = {
+const detailStackScreenOptions: StackNavigationOptions = {
     headerShown: true,
-    headerTitle: 'Search Location',
-    presentation: 'modal',
 };
 
 const StackNavigation = () => {
@@ -36,7 +35,8 @@ const StackNavigation = () => {
         <Stack.Navigator initialRouteName={'Login'} screenOptions={stackNavigationOptions}>
             <Stack.Screen name={'Login'} component={Login} options={loginStackScreenOptions} />
             <Stack.Screen name={'Drawer'} component={DrawerNavigation} />
-            <Stack.Screen name={'Search'} component={Search} options={searchStackScreenOptions} />
+            <Stack.Screen name={'Search'} component={Search} />
+            <Stack.Screen name={'Details'} component={Details} options={detailStackScreenOptions} />
         </Stack.Navigator>
     );
 };

@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState } from 'react';
-import { AppContextProps, AppContextProviderProps, FoundResult } from './types';
+import { AppContextProps, AppContextProviderProps } from './types';
+import { InfoData } from 'types/types';
 
 const AppContext = createContext<AppContextProps>({
     foundResult: null,
@@ -23,12 +24,9 @@ export const useDataContext = () => {
 };
 
 const AppContextProvider: React.FC<AppContextProviderProps> = ({ children }) => {
-    const [result, setResult] = useState<FoundResult>({
-        start: undefined,
-        end: undefined,
-    });
+    const [result, setResult] = useState<InfoData | null>(null);
 
-    const changeFoundedResult = (data: FoundResult) => {
+    const changeFoundedResult = (data: InfoData) => {
         setResult(data);
     };
 

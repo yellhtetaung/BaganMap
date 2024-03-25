@@ -12,7 +12,7 @@ import {
 import styles from './styles';
 
 interface TextInputProps extends RNTextInputProps {
-    label: string;
+    label?: string;
     labelStyle?: StyleProp<TextStyle>;
     containerStyle?: StyleProp<ViewStyle>;
     style?: StyleProp<TextStyle>;

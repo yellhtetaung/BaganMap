@@ -1,13 +1,8 @@
 import React from 'react';
 import { InfoData } from 'types/types';
 
-export interface FoundResult {
-    start?: InfoData;
-    end?: InfoData;
-}
-
 export interface AppContextProps {
-    foundResult: FoundResult | null;
+    foundResult: InfoData | null;
     setFoundResult: Function;
 }
 
