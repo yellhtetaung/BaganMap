@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { View, TouchableOpacity, Image, Text } from 'react-native';
+import { View, TouchableOpacity, Text, Image } from 'react-native';
 import MapView, { Marker, PROVIDER_GOOGLE } from 'react-native-maps';
 
 import styles from './styles';
@@ -44,9 +44,9 @@ const Home: React.FC<HomeProps> = ({ navigation }) => {
                     latitudeDelta: 0.0922,
                     longitudeDelta: 0.0421,
                 }}
-                onRegionChangeComplete={region => console.log(region)}
                 showsTraffic={true}
                 moveOnMarkerPress={true}
+                loadingEnabled={true}
             >
                 {foundResult && (
                     <Marker

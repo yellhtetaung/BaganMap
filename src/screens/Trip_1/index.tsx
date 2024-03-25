@@ -1,5 +1,5 @@
 import React, { useLayoutEffect } from 'react';
-import { Image, Text, View } from 'react-native';
+import { Text, View, Image } from 'react-native';
 import MapView, { Marker, PROVIDER_GOOGLE, Polyline } from 'react-native-maps';
 
 import { TripOneProps } from './types';
@@ -37,6 +37,7 @@ const TripOne: React.FC<TripOneProps> = ({ navigation }) => {
                     latitudeDelta: 0.0922,
                     longitudeDelta: 0.0421,
                 }}
+                loadingEnabled={true}
             >
                 {pagodas.length &&
                     pagodas.map(
@@ -46,6 +47,8 @@ const TripOne: React.FC<TripOneProps> = ({ navigation }) => {
                                     coordinate={{ latitude: pagoda.Latitude, longitude: pagoda.Longitude }}
                                     key={index.toString()}
                                     onPress={() => navigation.navigate('Details', { id: pagoda.Id })}
+                                    tracksViewChanges={false}
+                                    tracksInfoWindowChanges={false}
                                 >
                                     <View style={styles.markerContainer}>
                                         <Text style={styles.markerTitle}>

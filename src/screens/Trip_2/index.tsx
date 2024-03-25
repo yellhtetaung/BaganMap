@@ -37,6 +37,7 @@ const TripTwo: React.FC<TripTwoProps> = ({ navigation }) => {
                     latitudeDelta: 0.0922,
                     longitudeDelta: 0.0421,
                 }}
+                loadingEnabled={true}
             >
                 {pagodas.length &&
                     pagodas.map(
@@ -46,11 +47,14 @@ const TripTwo: React.FC<TripTwoProps> = ({ navigation }) => {
                                     coordinate={{ latitude: pagoda.Latitude, longitude: pagoda.Longitude }}
                                     key={index.toString()}
                                     onPress={() => navigation.navigate('Details', { id: pagoda.Id })}
+                                    tracksViewChanges={false}
+                                    tracksInfoWindowChanges={false}
                                 >
                                     <View style={styles.markerContainer}>
                                         <Text style={styles.markerTitle}>
-                                            {index} {pagoda.PagodaMmName}
+                                            {index + 1} {pagoda.PagodaMmName}
                                         </Text>
+
                                         <Image source={require('../../assets/pagoda.png')} style={styles.markerImage} />
                                     </View>
                                 </Marker>
