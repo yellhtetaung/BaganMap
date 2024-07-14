@@ -1,9 +1,9 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { View, TouchableOpacity, Text, Image } from 'react-native';
 import MapView, { Marker, PROVIDER_GOOGLE } from 'react-native-maps';
 
 import styles from './styles';
-import { colors, Icon } from 'components';
+import { colors, Icon, Loading } from 'components';
 import { useDataContext } from 'context';
 
 interface HomeProps {
@@ -14,6 +14,11 @@ interface HomeProps {
 const Home: React.FC<HomeProps> = ({ navigation }) => {
     const { foundResult } = useDataContext();
     const mapRef = useRef<MapView>(null);
+    const [isMapReady, setIsMapReady] = useState<boolean>(false);
+
+    const onMapLoaded = useCallback(() => {
+        setIsMapReady(true);
+    }, []);
 
     useEffect(() => {
         if (foundResult) {
@@ -34,6 +39,8 @@ const Home: React.FC<HomeProps> = ({ navigation }) => {
                 </TouchableOpacity>
             </View>
 
+            {!isMapReady && <Loading />}
+
             <MapView
                 ref={mapRef}
                 provider={PROVIDER_GOOGLE}
@@ -46,7 +53,7 @@ const Home: React.FC<HomeProps> = ({ navigation }) => {
                 }}
                 showsTraffic={true}
                 moveOnMarkerPress={true}
-                loadingEnabled={true}
+                onMapLoaded={onMapLoaded}
             >
                 {foundResult && (
                     <Marker

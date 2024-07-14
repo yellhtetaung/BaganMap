@@ -1,16 +1,18 @@
-import React, { useLayoutEffect } from 'react';
+import React, { useCallback, useLayoutEffect, useState } from 'react';
 import { Text, View, Image } from 'react-native';
 import MapView, { Marker, PROVIDER_GOOGLE, Polyline } from 'react-native-maps';
 
 import { TripOneProps } from './types';
 import data from 'libs/data';
 import styles from './styles';
-import { colors } from 'components';
+import { colors, Loading } from 'components';
 
 const { Tbl_TravelRouteListData, Tbl_BaganMapInfoData: baganMapInfo } = data;
 const travelData = Tbl_TravelRouteListData[0];
 
 const TripOne: React.FC<TripOneProps> = ({ navigation }) => {
+    const [isMapLoaded, setIsMapLoaded] = useState<boolean>(false);
+
     const pagodas = travelData.PagodaList.map(travel => {
         return baganMapInfo.find(bagan => bagan.Id === travel);
     });
@@ -20,6 +22,17 @@ const TripOne: React.FC<TripOneProps> = ({ navigation }) => {
         longitude: number;
     }[];
 
+    const onMapLoaded = useCallback(() => {
+        setIsMapLoaded(true);
+    }, []);
+
+    const onNavigationHandler = useCallback(
+        (id: string) => {
+            navigation.navigate('Details', { id });
+        },
+        [navigation],
+    );
+
     useLayoutEffect(() => {
         navigation.setOptions({
             headerTitle: travelData.TravelRouteName,
@@ -28,6 +41,8 @@ const TripOne: React.FC<TripOneProps> = ({ navigation }) => {
 
     return (
         <View style={styles.container}>
+            {!isMapLoaded && <Loading />}
+
             <MapView
                 provider={PROVIDER_GOOGLE}
                 style={styles.mapView}
@@ -37,7 +52,7 @@ const TripOne: React.FC<TripOneProps> = ({ navigation }) => {
                     latitudeDelta: 0.0922,
                     longitudeDelta: 0.0421,
                 }}
-                loadingEnabled={true}
+                onMapLoaded={onMapLoaded}
             >
                 {pagodas.length &&
                     pagodas.map(
@@ -46,7 +61,7 @@ const TripOne: React.FC<TripOneProps> = ({ navigation }) => {
                                 <Marker
                                     coordinate={{ latitude: pagoda.Latitude, longitude: pagoda.Longitude }}
                                     key={index.toString()}
-                                    onPress={() => navigation.navigate('Details', { id: pagoda.Id })}
+                                    onPress={() => pagoda?.Id && onNavigationHandler(pagoda.Id)}
                                     tracksViewChanges={false}
                                     tracksInfoWindowChanges={false}
                                 >

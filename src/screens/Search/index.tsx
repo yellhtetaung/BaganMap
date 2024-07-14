@@ -73,8 +73,6 @@ const Search: React.FC<SearchProps> = ({ navigation }) => {
             <View style={styles.container}>
                 <View style={styles.innerContainer}>
                     <TextInput
-                        label={'ဘုရားစေတီများ ရှာရန်'}
-                        labelStyle={styles.labelStyle}
                         value={inputValue}
                         onChangeText={text => onChangeHandler(text)}
                         placeholder={'စာသားရိုက်ထည့်ရန်...'}

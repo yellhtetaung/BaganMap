@@ -6,12 +6,6 @@ export default StyleSheet.create({
         padding: 10,
     },
 
-    label: {
-        fontSize: 18,
-        fontFamily: 'NotoSansMyanmar-Bold',
-        color: colors.black,
-    },
-
     input: {
         backgroundColor: colors.secondary,
         color: colors.white,

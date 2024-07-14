@@ -1,16 +1,18 @@
-import React, { useLayoutEffect } from 'react';
+import React, { useCallback, useLayoutEffect, useState } from 'react';
 import { Image, Text, View } from 'react-native';
 import MapView, { Marker, PROVIDER_GOOGLE, Polyline } from 'react-native-maps';
 
 import { TripTwoProps } from './types';
 import data from 'libs/data';
 import styles from './styles';
-import { colors } from 'components';
+import { colors, Loading } from 'components';
 
 const { Tbl_TravelRouteListData, Tbl_BaganMapInfoData: baganMapInfo } = data;
 const travelData = Tbl_TravelRouteListData[1];
 
 const TripTwo: React.FC<TripTwoProps> = ({ navigation }) => {
+    const [isMapLoaded, setIsMapLoaded] = useState<boolean>(false);
+
     const pagodas = travelData.PagodaList.map(travel => {
         return baganMapInfo.find(bagan => bagan.Id === travel);
     });
@@ -20,6 +22,10 @@ const TripTwo: React.FC<TripTwoProps> = ({ navigation }) => {
         longitude: number;
     }[];
 
+    const onMapLoaded = useCallback(() => {
+        setIsMapLoaded(true);
+    }, []);
+
     useLayoutEffect(() => {
         navigation.setOptions({
             headerTitle: travelData.TravelRouteName,
@@ -28,6 +34,7 @@ const TripTwo: React.FC<TripTwoProps> = ({ navigation }) => {
 
     return (
         <View style={styles.container}>
+            {!isMapLoaded && <Loading />}
             <MapView
                 provider={PROVIDER_GOOGLE}
                 style={styles.mapView}
@@ -37,7 +44,7 @@ const TripTwo: React.FC<TripTwoProps> = ({ navigation }) => {
                     latitudeDelta: 0.0922,
                     longitudeDelta: 0.0421,
                 }}
-                loadingEnabled={true}
+                onMapLoaded={onMapLoaded}
             >
                 {pagodas.length &&
                     pagodas.map(

@@ -8,14 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* BaganMapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* BaganMapTests.m */; };
-		0C80B921A6F3F58F76C31292 /* libPods-BaganMap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-BaganMap.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		3E70399EDD5D4A4D8A0F5E07 /* NotoSansMyanmar-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32FD3423C39A4D749BAEA548 /* NotoSansMyanmar-Medium.ttf */; };
 		47D575255F9E4066AD368A8B /* NotoSansMyanmar-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9760F3619CA4ECB863DE5F6 /* NotoSansMyanmar-Regular.ttf */; };
 		6D438C791CAD45C48ACE822F /* NotoSansMyanmar-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAFAA0F934FC4653841B289E /* NotoSansMyanmar-Light.ttf */; };
-		7699B88040F8A987B510C191 /* libPods-BaganMap-BaganMapTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-BaganMap-BaganMapTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		95F761B23D4F42C1A1CEE713 /* NotoSansMyanmar-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 09AB05BEA97447B2867E6C2C /* NotoSansMyanmar-SemiBold.ttf */; };
 		A22D25F9A91044809A2120C5 /* NotoSansMyanmar-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E14BFCAC5BE4181AC815FE6 /* NotoSansMyanmar-Thin.ttf */; };
@@ -23,6 +21,8 @@
 		D171538D5DA04CFD99067F12 /* NotoSansMyanmar-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A0E658A7BA441B58733BC64 /* NotoSansMyanmar-ExtraLight.ttf */; };
 		DB42DCADD7F0495693B66FC7 /* NotoSansMyanmar-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C482F8D0CCD847B2AC4B4C6E /* NotoSansMyanmar-Black.ttf */; };
 		DE44163F4EC043F1A3460B5F /* NotoSansMyanmar-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2B62E536168044AB824662A5 /* NotoSansMyanmar-Bold.ttf */; };
+		E0DB9B27C4E91FC7B66A325A /* libPods-BaganMap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D600FEBF3D2A6EB7B9F9ABA /* libPods-BaganMap.a */; };
+		EF38BE843843D02A60B8B1F7 /* libPods-BaganMap-BaganMapTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ECED1AE9931AD7CE3BDFE91 /* libPods-BaganMap-BaganMapTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,21 +47,21 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = BaganMap/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = BaganMap/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = BaganMap/main.m; sourceTree = "<group>"; };
-		19F6CBCC0A4E27FBF8BF4A61 /* libPods-BaganMap-BaganMapTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaganMap-BaganMapTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ECED1AE9931AD7CE3BDFE91 /* libPods-BaganMap-BaganMapTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaganMap-BaganMapTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B62E536168044AB824662A5 /* NotoSansMyanmar-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansMyanmar-Bold.ttf"; path = "../src/assets/fonts/NotoSansMyanmar-Bold.ttf"; sourceTree = "<group>"; };
 		2E14BFCAC5BE4181AC815FE6 /* NotoSansMyanmar-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansMyanmar-Thin.ttf"; path = "../src/assets/fonts/NotoSansMyanmar-Thin.ttf"; sourceTree = "<group>"; };
 		32FD3423C39A4D749BAEA548 /* NotoSansMyanmar-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansMyanmar-Medium.ttf"; path = "../src/assets/fonts/NotoSansMyanmar-Medium.ttf"; sourceTree = "<group>"; };
-		3B4392A12AC88292D35C810B /* Pods-BaganMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaganMap.debug.xcconfig"; path = "Target Support Files/Pods-BaganMap/Pods-BaganMap.debug.xcconfig"; sourceTree = "<group>"; };
-		5709B34CF0A7D63546082F79 /* Pods-BaganMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaganMap.release.xcconfig"; path = "Target Support Files/Pods-BaganMap/Pods-BaganMap.release.xcconfig"; sourceTree = "<group>"; };
-		5B7EB9410499542E8C5724F5 /* Pods-BaganMap-BaganMapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaganMap-BaganMapTests.debug.xcconfig"; path = "Target Support Files/Pods-BaganMap-BaganMapTests/Pods-BaganMap-BaganMapTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5DCACB8F33CDC322A6C60F78 /* libPods-BaganMap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaganMap.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D600FEBF3D2A6EB7B9F9ABA /* libPods-BaganMap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaganMap.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F7F4B23BA0BDD613F804FEF /* Pods-BaganMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaganMap.release.xcconfig"; path = "Target Support Files/Pods-BaganMap/Pods-BaganMap.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = BaganMap/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		89C6BE57DB24E9ADA2F236DE /* Pods-BaganMap-BaganMapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaganMap-BaganMapTests.release.xcconfig"; path = "Target Support Files/Pods-BaganMap-BaganMapTests/Pods-BaganMap-BaganMapTests.release.xcconfig"; sourceTree = "<group>"; };
+		9AC646795280392170F8A4BB /* Pods-BaganMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaganMap.debug.xcconfig"; path = "Target Support Files/Pods-BaganMap/Pods-BaganMap.debug.xcconfig"; sourceTree = "<group>"; };
 		A9760F3619CA4ECB863DE5F6 /* NotoSansMyanmar-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansMyanmar-Regular.ttf"; path = "../src/assets/fonts/NotoSansMyanmar-Regular.ttf"; sourceTree = "<group>"; };
 		AAFAA0F934FC4653841B289E /* NotoSansMyanmar-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansMyanmar-Light.ttf"; path = "../src/assets/fonts/NotoSansMyanmar-Light.ttf"; sourceTree = "<group>"; };
 		BB72D13024A0410C88858A2D /* NotoSansMyanmar-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansMyanmar-ExtraBold.ttf"; path = "../src/assets/fonts/NotoSansMyanmar-ExtraBold.ttf"; sourceTree = "<group>"; };
 		C482F8D0CCD847B2AC4B4C6E /* NotoSansMyanmar-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSansMyanmar-Black.ttf"; path = "../src/assets/fonts/NotoSansMyanmar-Black.ttf"; sourceTree = "<group>"; };
+		E0E947CC5851E772913A61FF /* Pods-BaganMap-BaganMapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaganMap-BaganMapTests.debug.xcconfig"; path = "Target Support Files/Pods-BaganMap-BaganMapTests/Pods-BaganMap-BaganMapTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		FFE2E369893E5F28FB480301 /* Pods-BaganMap-BaganMapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaganMap-BaganMapTests.release.xcconfig"; path = "Target Support Files/Pods-BaganMap-BaganMapTests/Pods-BaganMap-BaganMapTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7699B88040F8A987B510C191 /* libPods-BaganMap-BaganMapTests.a in Frameworks */,
+				EF38BE843843D02A60B8B1F7 /* libPods-BaganMap-BaganMapTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C80B921A6F3F58F76C31292 /* libPods-BaganMap.a in Frameworks */,
+				E0DB9B27C4E91FC7B66A325A /* libPods-BaganMap.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,8 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				5DCACB8F33CDC322A6C60F78 /* libPods-BaganMap.a */,
-				19F6CBCC0A4E27FBF8BF4A61 /* libPods-BaganMap-BaganMapTests.a */,
+				6D600FEBF3D2A6EB7B9F9ABA /* libPods-BaganMap.a */,
+				1ECED1AE9931AD7CE3BDFE91 /* libPods-BaganMap-BaganMapTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -176,10 +176,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3B4392A12AC88292D35C810B /* Pods-BaganMap.debug.xcconfig */,
-				5709B34CF0A7D63546082F79 /* Pods-BaganMap.release.xcconfig */,
-				5B7EB9410499542E8C5724F5 /* Pods-BaganMap-BaganMapTests.debug.xcconfig */,
-				89C6BE57DB24E9ADA2F236DE /* Pods-BaganMap-BaganMapTests.release.xcconfig */,
+				9AC646795280392170F8A4BB /* Pods-BaganMap.debug.xcconfig */,
+				7F7F4B23BA0BDD613F804FEF /* Pods-BaganMap.release.xcconfig */,
+				E0E947CC5851E772913A61FF /* Pods-BaganMap-BaganMapTests.debug.xcconfig */,
+				FFE2E369893E5F28FB480301 /* Pods-BaganMap-BaganMapTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -191,12 +191,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "BaganMapTests" */;
 			buildPhases = (
-				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
+				C93EC2333788514BA8FAE5D3 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */,
-				F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */,
+				04368A4DA46B97B2BA5C238D /* [CP] Embed Pods Frameworks */,
+				4E31C3DA624A77B135BE6249 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -212,13 +212,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "BaganMap" */;
 			buildPhases = (
-				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
+				5CFAC0B716E75213237507F3 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
-				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				3D3E8D2DF176C4FBA1BBB44B /* [CP] Embed Pods Frameworks */,
+				AA8EC48B0988653B38D8F517 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -310,7 +310,24 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
+		04368A4DA46B97B2BA5C238D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BaganMap-BaganMapTests/Pods-BaganMap-BaganMapTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BaganMap-BaganMapTests/Pods-BaganMap-BaganMapTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BaganMap-BaganMapTests/Pods-BaganMap-BaganMapTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D3E8D2DF176C4FBA1BBB44B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -327,29 +344,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BaganMap/Pods-BaganMap-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
+		4E31C3DA624A77B135BE6249 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BaganMap-BaganMapTests/Pods-BaganMap-BaganMapTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BaganMap-BaganMapTests-checkManifestLockResult.txt",
+				"${PODS_ROOT}/Target Support Files/Pods-BaganMap-BaganMapTests/Pods-BaganMap-BaganMapTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BaganMap-BaganMapTests/Pods-BaganMap-BaganMapTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
+		5CFAC0B716E75213237507F3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -371,24 +383,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BaganMap-BaganMapTests/Pods-BaganMap-BaganMapTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BaganMap-BaganMapTests/Pods-BaganMap-BaganMapTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BaganMap-BaganMapTests/Pods-BaganMap-BaganMapTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
+		AA8EC48B0988653B38D8F517 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -405,21 +400,26 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BaganMap/Pods-BaganMap-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
+		C93EC2333788514BA8FAE5D3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BaganMap-BaganMapTests/Pods-BaganMap-BaganMapTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BaganMap-BaganMapTests/Pods-BaganMap-BaganMapTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BaganMap-BaganMapTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BaganMap-BaganMapTests/Pods-BaganMap-BaganMapTests-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -455,7 +455,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-BaganMap-BaganMapTests.debug.xcconfig */;
+			baseConfigurationReference = E0E947CC5851E772913A61FF /* Pods-BaganMap-BaganMapTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -482,7 +482,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-BaganMap-BaganMapTests.release.xcconfig */;
+			baseConfigurationReference = FFE2E369893E5F28FB480301 /* Pods-BaganMap-BaganMapTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -506,7 +506,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-BaganMap.debug.xcconfig */;
+			baseConfigurationReference = 9AC646795280392170F8A4BB /* Pods-BaganMap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -533,7 +533,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-BaganMap.release.xcconfig */;
+			baseConfigurationReference = 7F7F4B23BA0BDD613F804FEF /* Pods-BaganMap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
